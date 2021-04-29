@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity3">
+
+    <ImageView
+        android:id="@+id/header_background3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/background_3"
+        tools:targetApi="lollipop"
+        style="@style/header_background" />
+
+    <ImageView
+        app:layout_constraintEnd_toEndOf="@+id/header_background3"
+        app:layout_constraintTop_toTopOf="@+id/header_background3"
+        android:src="@drawable/ic_down_arrow"
+        android:id="@+id/down_arrow3"
+        style="@style/down_arrow"/>
+
+    <ScrollView
+        android:id="@+id/third_scrollview3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_background3"
+        style="@style/third_scrollview">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/third_title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_extra_bold"
+                android:text="Vườn Quốc Gia Ba Vì"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/third_ratingbar3"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressTint="@color/colorAccent"
+                    android:rating="4.8"
+                    android:stepSize="0.5"
+                    tools:targetApi="lollipop"/>
+
+                <TextView
+                    android:id="@+id/third_rating_number3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="4.8"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/third_rating_number2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="(1678)"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerImageSlider3"
+                style="@style/Slider"
+                />
+
+            <TextView
+                android:id="@+id/about3"
+                android:text="About"
+                style="@style/Title" />
+
+            <TextView
+                android:id="@+id/about_text3"
+                android:text="Cách trung tâm Hà Nội chưa đầy 60km, Ba Vì nổi tiếng là điểm đến lý tưởng dành cho du khách yêu thích không khí trong lành mát mẻ cùng khung cảnh hoang sơ, hùng vĩ của thiên nhiên rừng núi. Nổi bật giữa không gian núi rừng ngút ngàn sắc xanh. Vườn Quốc Gia Ba Vì hiện lên với vẻ đẹp bí ẩn, diệu kì, chìm đắm trong sương mờ huyền ảo chắc chắn sẽ là điểm đến không thể bỏ qua khi du lịch Hà Nội với những người thích khám phá."
+                style="@style/paragraph"
+                />
+
+            <TextView
+                android:id="@+id/venue_type3"
+                android:text="Transport"
+                style="@style/Title"
+                />
+
+            <TextView
+                android:id="@+id/venue_type_text3"
+                android:text="Đối với các bạn ưa thích những chuyến đi phượt phiêu lưu, mạo hiểm, có thể lựa chọn 1 trong 2 cung đường sau:\n
+
+– Xuất phát từ Big C Thăng Long (Trần Duy Hưng, Hà Nội) -> đi theo đại lộ Thăng Long khoảng 30 km -> cầu vượt Hòa Lạc -> đi thẳng vào khu vực Làng văn hóa theo biển chỉ dẫn đến xã Yên Bài -> núi Ba Vì.\n
+
+– Xuất phát từ khu vực Cầu Giấy ->  theo đường Quốc lộ 32 khoảng 37 km tới ngã tư bến xe Sơn Tây -> rẽ trái  tiếp 3,5 km đến ngã tư Viện 105 – > Đi thẳng tiếp 9 km tới ngã ba Tản Lĩnh -> rẽ  trái đi tiếp 3,5km đến ngã 5 hình sao, phía trước bên tay phải là Trạm bán vé tham quan Vườn Quốc gia Ba Vì."
+                style="@style/paragraph" />
+
+            <TextView
+                android:id="@+id/type_of_view3"
+                android:text="What's interesting"
+                style="@style/Title"
+                />
+
+            <TextView
+                android:id="@+id/tyoe_of_view_text3"
+                android:text="- Rừng thiên nhiên Ba Vì\n
+Bước vào Vườn quốc gia Ba Vì, đầu tiên bạn sẽ có cơ hội khám phá khu rừng thiên nhiên huyền ảo chìm đắm trong sương mờ. Cả một khu rừng thông ngút ngàn sắc xanh cao vời vợi, bạn tha hồ cùng tụi bạn thân chụp những tấm hình sống ảo cực chất không khác gì lạc vào xứ sở thần tiên Alice. Đặc biệt, vào mùa thu – mùa lá rơi tuyệt đẹp, bạn sẽ được chứng kiến cả khu rừng chìm trong sắc vàng của lá, ngay lúc này cùng người ấy ngắm lá rơi thì còn gì lãng mạn hơn phải không nào?\n\n
+- Nhà thờ cổ Ba Vì\n
+Với công trình kiến trúc cổ kiểu Pháp, nhà thờ cổ Ba Vì hiện lên với vẻ đẹp ma mị, đầy huyền bí lúc ẩn lúc hiện giữa làn sương khói dày đặc. Nếu còn hơi e sợ vẻ bí ẩn của khu nhà cổ, hãy bám chân lũ bạn vào cùng khám phá nhé. Rêu phong bám phủ thoắt hiện những chú tắc kè hoa, nhà thờ cổ Ba Vì là địa điểm lý tưởng cho những bức ảnh siêu “deep” vô cùng cuốn hút. Vẻ đẹp cổ kính, huyền ảo của nhà thờ cổ là nét đặc sắc của khu vườn quốc gia nổi tiếng này.\n\n
+- Nhà kính xương rồng\n
+Điểm đến thu hút lượng du khách check in nhất phải nhắc tới chính là nhà kính xương rồng duy nhất tại khu du lịch Ba Vì. Nhà kính xương rồng được xây dựng thành một thiên đường xương rồng đầy độc đáo và lạ mắt, hấp dẫn mọi ánh nhìn của du khách. Đây chính là điểm dừng chân lí thú, độc nhất để các bạn trẻ thỏa sức tự sướng cùng hơn 1200 loài cây xương rồng lớn bé đầy gai góc, mạnh mẽ nhưng không kém phần mộng mị.
+
+
+"
+                style="@style/paragraph" />
+
+            <Button
+                android:id="@+id/roadmap_button3"
+                android:text="C H E C K   R O A D M A P"
+                style="@style/road_map" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

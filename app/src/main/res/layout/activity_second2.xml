@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_header3"
+    tools:context=".SecondActivity2"
+    android:transitionName="background_image_transition"
+    tools:targetApi="LOLLIPOP">
+
+    <include
+        android:id="@+id/second_back_arrow2"
+        layout="@layout/second_back_arrow"/>
+
+    <TextView
+        android:id="@+id/second_title2"
+        android:text="Tam Đảo - Vĩnh Phúc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:showIn="@layout/activity_second1"
+        style="@style/second_title" />
+
+    <TextView
+        android:id="@+id/second_subtitle2"
+        android:text="Tam Đảo Vĩnh Phúc được mệnh danh là “Đà Lạt của miền Bắc”. Sở hữu cảnh sắc thiên nhiên hùng vĩ và thơ mộng cùng kiểu khí hậu mát mẻ, trong lành, nơi đây thực sự là một điểm du lịch lý tưởng cho các kỳ nghỉ ngắn ngày. Tuy nhiên, Tam Đảo không chỉ có thế, nó còn ẩn chứa nhiều điều kỳ thú khác mà ai cũng muốn đến và trải nghiệm. Nếu bạn cũng muốn tìm một nơi mới mẻ cho những cảm giác mới thì hôm nay hãy cùng khám phá thị trấn mờ sương này nhé!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/second_title2"
+        app:layout_constraintTop_toBottomOf="@id/second_title2"
+        style="@style/second_subtitle"/>
+
+    <RatingBar
+        android:id="@+id/second_ratingbar2"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:max="5"
+        android:numStars="5"
+        android:progressTint="@color/colorAccent"
+        android:rating="4.7"
+        app:layout_constraintStart_toStartOf="@id/second_subtitle2"
+        app:layout_constraintTop_toBottomOf="@id/second_subtitle2"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/second_rating_number"
+        android:text="4.7"
+        app:layout_constraintStart_toEndOf="@id/second_ratingbar2"
+        app:layout_constraintTop_toBottomOf="@id/second_subtitle2"
+        style="@style/second_rating_number" />
+
+    <TextView
+        android:id="@+id/second_rating_number2"
+        android:text="(1510)"
+        app:layout_constraintStart_toEndOf="@id/second_rating_number"
+        app:layout_constraintTop_toTopOf="@id/second_rating_number"
+        style="@style/second_rating_number2" />
+
+    <ImageView
+        android:id="@+id/second_arrow_up2"
+        android:src="@drawable/ic_up_arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/second_ratingbar2"
+        style="@style/second_arrow_up" />
+
+    <TextView
+        android:id="@+id/more_details2"
+        android:text="More Details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/second_arrow_up2"
+        app:layout_constraintVertical_bias="0.0"
+
+        style="@style/more_details" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

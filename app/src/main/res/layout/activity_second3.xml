@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity3"
+    android:background="@drawable/background_header2"
+    android:transitionName="background_image_transition"
+    tools:targetApi="LOLLIPOP">
+
+    <include
+        android:id="@+id/second_back_arrow3"
+        layout="@layout/second_back_arrow"/>
+
+    <TextView
+        android:id="@+id/second_title3"
+        android:text="Vườn Quốc Gia Ba Vì"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/second_title" />
+
+    <TextView
+        android:id="@+id/second_subtitle3"
+        android:text="Cách trung tâm Hà Nội chưa đầy 60km, Ba Vì nổi tiếng là điểm đến lý tưởng dành cho du khách yêu thích không khí trong lành mát mẻ cùng khung cảnh hoang sơ, hùng vĩ của thiên nhiên rừng núi. Nổi bật giữa không gian núi rừng ngút ngàn sắc xanh. Vườn Quốc Gia Ba Vì hiện lên với vẻ đẹp bí ẩn, diệu kì, chìm đắm trong sương mờ huyền ảo chắc chắn sẽ là điểm đến không thể bỏ qua khi du lịch Hà Nội với những người thích khám phá."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/second_title3"
+        app:layout_constraintTop_toBottomOf="@id/second_title3"
+        style="@style/second_subtitle"/>
+
+    <RatingBar
+        android:id="@+id/second_ratingbar3"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:max="5"
+        android:numStars="5"
+        android:progressTint="@color/colorAccent"
+        android:rating="4.8"
+        app:layout_constraintStart_toStartOf="@id/second_subtitle3"
+        app:layout_constraintTop_toBottomOf="@id/second_subtitle3"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/second_rating_number3"
+        android:text="4.8"
+        app:layout_constraintStart_toEndOf="@id/second_ratingbar3"
+        app:layout_constraintTop_toBottomOf="@id/second_subtitle3"
+        style="@style/second_rating_number" />
+
+    <TextView
+        android:id="@+id/second_rating_number2_3"
+        android:text="(1678)"
+        app:layout_constraintStart_toEndOf="@id/second_rating_number3"
+        app:layout_constraintTop_toTopOf="@id/second_rating_number3"
+        style="@style/second_rating_number2" />
+
+    <ImageView
+        android:id="@+id/second_arrow_up3"
+        android:src="@drawable/ic_up_arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/second_ratingbar3"
+        style="@style/second_arrow_up" />
+
+    <TextView
+        android:id="@+id/more_details3"
+        android:text="More Details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/second_arrow_up3"
+        app:layout_constraintVertical_bias="0.0"
+
+        style="@style/more_details" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

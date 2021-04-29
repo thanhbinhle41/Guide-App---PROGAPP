@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity2">
+
+    <ImageView
+        android:id="@+id/header_background2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/background_2"
+        tools:targetApi="lollipop"
+        style="@style/header_background" />
+
+    <ImageView
+        app:layout_constraintEnd_toEndOf="@+id/header_background2"
+        app:layout_constraintTop_toTopOf="@+id/header_background2"
+        android:src="@drawable/ic_down_arrow"
+        android:id="@+id/down_arrow2"
+        style="@style/down_arrow"/>
+
+    <ScrollView
+        android:id="@+id/third_scrollview2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_background2"
+        style="@style/third_scrollview">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/third_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_extra_bold"
+                android:text="Tam Đảo - Vĩnh Phúc"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/third_ratingbar2"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressTint="@color/colorAccent"
+                    android:rating="4.7"
+                    android:stepSize="0.5"
+                    tools:targetApi="lollipop"/>
+
+                <TextView
+                    android:id="@+id/third_rating_number2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="4.7"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/third_rating_number2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="(1891)"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerImageSlider2"
+                style="@style/Slider"
+                />
+
+            <TextView
+                android:id="@+id/about2"
+                android:text="About"
+                style="@style/Title" />
+
+            <TextView
+                android:id="@+id/about_text2"
+                android:text="Tam Đảo Vĩnh Phúc được mệnh danh là “Đà Lạt của miền Bắc”. Sở hữu cảnh sắc thiên nhiên hùng vĩ và thơ mộng cùng kiểu khí hậu mát mẻ, trong lành, nơi đây thực sự là một điểm du lịch lý tưởng cho các kỳ nghỉ ngắn ngày. Tuy nhiên, Tam Đảo không chỉ có thế, nó còn ẩn chứa nhiều điều kỳ thú khác mà ai cũng muốn đến và trải nghiệm. Nếu bạn cũng muốn tìm một nơi mới mẻ cho những cảm giác mới thì hôm nay hãy cùng khám phá thị trấn mờ sương này nhé!"
+                style="@style/paragraph"
+                />
+
+            <TextView
+                android:id="@+id/venue_type2"
+                android:text="Transport"
+                style="@style/Title"
+                />
+
+            <TextView
+                android:id="@+id/venue_type_text2"
+                android:text="Với ô tô riêng và xe máy: Các bạn đi theo hướng Cầu Thăng Long hướng Bắc Thăng Long Nội bài -> đi khoảng 25 km đến đoạn giao giữa quốc lộ 2 và  đường AH 4 với đường Bắc Thăng Long Nội Bài -> Các bạn rẽ trái để đi đường quốc lộ 2 khoảng 200m -> rẽ tiếp đường quốc lộ Hà Nội – Lào Cai khoảng 25 km -> đến chỗ vòng xuyến huyện Tam Dương, tỉnh Vĩnh Phúc, các bạn đi theo hướng đường quốc lộ 2B khoảng 20 km nữa là đến khu trung tâm của Tam Đảo."
+                style="@style/paragraph" />
+
+            <TextView
+                android:id="@+id/type_of_view2"
+                android:text="What's interesting"
+                style="@style/Title"
+                />
+
+            <TextView
+                android:id="@+id/tyoe_of_view_text2"
+                android:text="- Nhà thờ đá cổ Tam Đảo\n
+Nhà thờ đá cổ Tam Đảo được xây dựng từ năm 1906 ngay đường lên núi Thiên Nhị. Ban đầu đây chỉ là mô hình nhà sàn lợp lá được người Pháp dựng lên. Mãi đến năm 1937 nhà thờ mới được xây dựng kiên cố lại bằng đá theo lối kiến trúc Gothic điển hình.\n\n
+- Thác Bạc\n
+Nằm ẩn mình sâu trong lòng núi rừng, thác Bạc hiện lên thật sinh động với hình ảnh dòng nước nhỏ chảy từ khe núi trên cao len lỏi qua các vòm cây rồi đổ xuống chân thác. Đường xuống thác không quá dài nhưng lại khó đi, đường rất hẹp, trơn và cheo leo, một bên là núi đá, một bên là vực thẳm hiểm trở nên du khách nhớ chú ý an toàn.\n\n
+- Cầu mây Tam Đảo\n
+Được mệnh danh là studio ngoài trời, Cầu mây là điểm check in cực hot không nên bỏ qua khi đến du lịch Tam Đảo. Đứng tại đây bạn có thể ngắm được trọn vẹn một Tam Đảo bình yên nên thơ không vướng vụi trần. Thời điểm check in tại đây phù hợp nhất là vào sáng sớm và chiều tà. Tận hưởng Tam Đảo sớm mù sương tưởng chừng như chạm tay vào những đám mây trắng xoá hay ngắm nhìn khung cảnh mặt trời đang lùi dần về phía chân trời sẽ đem đến cho bạn những cảm xúc tuyệt vời.\n
+
+
+
+
+"
+                style="@style/paragraph" />
+
+            <Button
+                android:id="@+id/roadmap_button2"
+                android:text="C H E C K   R O A D M A P"
+                style="@style/road_map" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

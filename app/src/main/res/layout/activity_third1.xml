@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity1">
+
+    <ImageView
+        android:id="@+id/header_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/background_1"
+        tools:targetApi="lollipop"
+        style="@style/header_background" />
+
+    <ImageView
+
+        app:layout_constraintEnd_toEndOf="@+id/header_background"
+        app:layout_constraintTop_toTopOf="@+id/header_background"
+        android:src="@drawable/ic_down_arrow"
+        android:id="@+id/down_arrow"
+        style="@style/down_arrow" />
+
+    <ScrollView
+        android:id="@+id/third_scrollview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_background"
+        style="@style/third_scrollview">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/third_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_extra_bold"
+                android:text="Đồng Mô - Sơn Tây"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/third_ratingbar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressTint="@color/colorAccent"
+                    android:rating="4.3"
+                    android:stepSize="0.5"
+                    tools:targetApi="lollipop"/>
+
+                <TextView
+                    android:id="@+id/third_rating_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    android:text="4.3"
+                    />
+
+                <TextView
+                    android:id="@+id/third_rating_number2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="(1510)"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerImageSlider"
+                style="@style/Slider" />
+
+            <TextView
+                android:id="@+id/about"
+                android:text="About"
+                style="@style/Title" />
+
+            <TextView
+                android:id="@+id/about_text"
+                android:text="Khu du lịch Đồng Mô ngày càng nổi tiếng và thu hút giới trẻ, không chỉ bởi vị trí gần mà đây còn là nơi yên tĩnh, phong cảnh lại nên thơ hữu tình nên có rất nhiều bác chọn đến đây để xả stress tránh xa những hối hả của cuộc sống, hòa mình với thiên nhiên sau mỗi tuần làm việc mệt mỏi."
+                style="@style/paragraph" />
+
+            <TextView
+                android:id="@+id/venue_type"
+                android:text="Transport"
+                style="@style/Title" />
+
+            <TextView
+                android:id="@+id/venue_type_text"
+                android:text="   Đồng Mô nằm cách Hà Nội chỉ khoảng 40km nên để tiết kiệm thời gian cũng như đơn giản thì các bạn có thể đi bằng xe máy. Từ Hà Nội các bạn đi theo quốc lộ 32 lên thị xã Sơn Tây thì rẽ trái, sau đó đi tiếp 10km là đến.\n
+  Còn nếu bạn muốn đi xe bus tới Đồng Mô thì có thể lựa chọn các tuyến 71, 71B hoặc 75 đến làng văn hóa các dân tộc Việt Nam thì xuống ở đấy rồi đi tiếp vào khu du lịch nhé. Giá vé xe bus dao động từ 20.000 – 25.000đ tùy tuyến."
+                style="@style/paragraph"
+                />
+
+            <TextView
+                android:id="@+id/type_of_view"
+                android:text="What's interesting"
+                style="@style/Title"
+                />
+
+            <TextView
+                android:id="@+id/tyoe_of_view_text"
+                style="@style/paragraph"
+                android:text="
+- Câu cá tại Đồng Mô\n
+   Hồ Đồng Mô là điểm đến thường xuyên của những người thích đi câu cá sống ở các khu vực gần đó như xã Sơn Đông, xã Cổ Đông, thị xã Sơn Tây vì vị trí gần, nhiều cá và không gian thoáng. Chẳng còn gì tuyệt hơn khi phóng xe lên đây ngắm một buổi hoàng hôn, chiều tà, tự mình suy ngẫm về  vạn vật trên cõi trần thế này.\n\n
+- Cắm trại Đồng Mô\n
+Cắm trại ở Đồng Mô sẽ là lựa chọn lý tưởng cho chuyến dã ngoại, nhất là với những nhóm bạn đông người. Đây chắc chắn là trải nghiệm tuyệt vời cho bạn khi du lịch Đồng Mô. Đó là cảm giác hòa mình cùng thiên nhiên, đắm chìm vào bầu không khí dịu êm. Khu sinh thái Đồng Mô Sơn Tây sẽ là nơi giúp bạn tạm gác âu lo, nạp thêm năng lượng tích cực sau những ngày gồng mình nơi thành thị.\n\n
+- Làng văn hóa các dân tộc Việt Nam\n
+Ngoài ra gần đây còn có làng văn hóa các dân tộc Việt Nam, ở đây khá là vắng vẻ, ít người nên chỉ hợp với những đoàn tham quan du lịch của các công ty, tổ chức… Tuy nhiên, chính sự yên tĩnh này lại thu hút đến lạ kỳ. Nơi đây có những background xịn xò để có những góc ảnh thần thánh. Địa điểm này là nơi để tạm lánh xa những bộn bề của thủ đô Hà Nội để chìm vào trong khung cảnh nên thơ, hữu tình.\n
+
+
+
+" />
+
+            <Button
+                android:id="@+id/roadmap_button"
+                android:text="C H E C K   R O A D M A P"
+                style="@style/road_map" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
